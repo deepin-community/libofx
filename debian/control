@@ -1,0 +1,76 @@
+Source: libofx
+Maintainer: Dylan Aïssi <daissi@debian.org>
+Section: libs
+Priority: optional
+Build-Depends: curl,
+               debhelper-compat (= 12),
+               doxygen,
+               gengetopt,
+               help2man,
+               libcurl4-gnutls-dev,
+               libosp-dev,
+               libxml++2.6-dev,
+               perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/debian/libofx
+Vcs-Git: https://salsa.debian.org/debian/libofx.git
+Homepage: https://github.com/libofx/libofx
+Rules-Requires-Root: no
+
+Package: libofx7
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Suggests: ofx
+Description: library to support the Open Financial Exchange format
+ Open Financial Exchange is an open standard for exchanging financial
+ information. Using this library a program can enable support for
+ common financial transactions such as bill payment, accessing account
+ information and investment tracking.
+
+Package: libofx-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libc6-dev | libc-dev,
+         libofx7 (= ${binary:Version}),
+         libosp-dev,
+         ${misc:Depends}
+Suggests: libofx-doc
+Description: development package for libofx7
+ This package provides header files and related support for developing
+ packages that use libofx7, a library to support the Open Financial Exchange
+ format.
+ .
+ Open Financial Exchange is an open standard for exchanging financial
+ information. Using this library a program can enable support for
+ common financial transactions such as bill payment, accessing account
+ information and investment tracking.
+
+Package: libofx-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: ${misc:Depends}
+Recommends: libofx-dev (>= ${source:Version})
+Description: documentation for libofx7
+ This package provides HTML documentation and sample OFX files for developing
+ packages using libofx7, a library to support the Open Financial Exchange
+ format.
+ .
+ Open Financial Exchange is an open standard for exchanging financial
+ information. Using this library a program can enable support for
+ common financial transactions such as bill payment, accessing account
+ information and investment tracking.
+
+Package: ofx
+Architecture: any
+Section: utils
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: Open Financial Exchange programs
+ This package contains programs that implement a primitive interface for
+ exchanging financial information using Open Financial Exchange. More
+ sophisticated access is normally done through programs using the libofx
+ library rather than with the programs here.

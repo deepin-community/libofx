@@ -1,0 +1,21 @@
+language: cpp
+
+
+arch:
+ - amd64
+ - ppc64le
+
+dist: bionic
+
+sudo: required
+
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install -y libosp-dev gengetopt
+
+script:
+  - ./autogen.sh
+  - ./configure
+  - make
+  - sudo make install
+

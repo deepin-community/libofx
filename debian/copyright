@@ -1,0 +1,130 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: LibOFX
+Upstream-Contact: Benoit Grégoire <benoitg@coeus.ca>
+Source: https://github.com/libofx/libofx
+
+Files: *
+Copyright: 2002-2011 Benoit Grégoire
+           2005 Ace Jones
+           2007 Martin Preuss
+License: GPL-2+
+
+Files: lib/getopt.c lib/getopt1.c lib/gnugetopt.h
+Copyright: 1987-2001 Free Software Founddation, Inc
+License: LGPL-2.1+
+
+Files: lib/tree.hh
+Copyright: 2001-2005 Kasper Peeters <kasper.peeters@aei.mpg.de>
+License: GPL-2
+
+Files: dtd/ofx160.dtd dtd/ofx201.dtd
+Copyright: 1997-1999, 2001 CheckFree Corp., Intuit Inc., Microsoft Corp*
+License: OFX
+ A royalty-free, worldwide, and perpetual license is hereby granted to
+ any party to use the Open Financial Exchange Specification to make, use,
+ and sell products and services that conform to this Specification.
+ .
+ THIS OPEN FINANCIAL EXCHANGE SPECIFICATION IS MADE AVAILABLE "AS IS"
+ WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY
+ APPLICABLE LAW, MICROSOFT, INTUIT AND CHECKFREE ("PUBLISHERS") FURTHER
+ DISCLAIM ALL WARRANTIES, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT, ALL OF WHICH ARE HEREBY DISCLAIMED. THE ENTIRE RISK
+ ARISING OUT OF THE USE OF THIS SPECIFICATION REMAINS WITH RECIPIENT. TO
+ THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+ PUBLISHERS OF THIS SPECIFICATION BE LIABLE FOR ANY CONSEQUENTIAL,
+ INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES
+ WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS
+ PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER
+ PECUNIARY LOSS) ARISING OUT OF ANY USE TO WHICH THIS SPECIFICATION IS
+ PUT, EVEN IF THE PUBLISHERS HEREOF HAVE BEEN ADVISED OF THE POSSIBILITY
+ OF SUCH DAMAGES.
+Comment:
+ Both ofx201.dtd and ofx160.dtd are from the Open Financial Exchange
+ standard (more recent versions are at www.ofx.net).
+ .
+ Further clarification of the license terms from the OFX Foundation says that
+ the restriction which appears to only allow things which "conform to
+ this Specification" means specifically that if an implementation
+ claims to conform to OFX but does not then there is a problem, but
+ otherwise there is none:
+ .
+  As long as your software doesn't state that it uses OFX (i.e. doesn't
+  mention what it uses), then all should be fine.
+ .
+  The bottom line seems to be that it is fine if you use OFX technology as
+  long as you do not represent your own enhanced version (added to or
+  changed) as official "OFX".
+ .
+  Your software need not implement the whole DTD.
+ .
+ This thus permits the distribution of modifications (a key question),
+ provided that there is no inaccurate claim made about OFX compliance.
+
+Files: debian/*
+Copyright: 2002-2004 James A. Treacy <treacy@debian.org>
+           2004-2008 Thomas Bushnell, BSG <tb@debian.org>
+           2004 Stephen Quinney <stephen@jadevine.org.uk>
+           2005 Thomas Viehmann <tv@beamnet.de>
+           2006, 2012 Matthias Klose <doko@debian.org>
+           2008 Andreas Barth <aba@not.so.argh.org>
+           2008 Chris Lamb <chris@chris-lamb.co.uk>
+           2011 Bryan Donlan <bdonlan@gmail.com>
+           2014 Sébastien Villemot <sebastien@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This program is free software: you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation, either version 2 of
+ the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License, version 2, can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2
+ This program is free software: you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation, version 2 of
+ the License.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License, version 2, can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation; either version 2.1 of the License, or (at
+ your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this library. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License, version 2.1, can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.

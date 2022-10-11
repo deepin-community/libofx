@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+# Name of the shared library package
+PACKNAME=libofx7
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND=-Wl,--as-needed
+
+%:
+	dh $@ --no-parallel
+# The libofx makefile seems to be non safe for paralleling at least on powerpc arch.
+# See build log of 1:0.9.9 in experimental.
+
+# Allow our shared data (DTDs, etc) to coexist among multiple installations
+# of different soname revisions of the same library
+override_dh_auto_configure:
+	dh_auto_configure -- --datadir=/usr/share/$(PACKNAME)
+
+override_dh_auto_build:
+	dh_auto_build
+	## Build doxygen doc
+	make -C doc/ doc
+
+override_dh_installman:
+	## Generate the ofx2qif manual page now
+	pod2man debian/ofx2qif.pod --section=1 --center="User Commands" > debian/ofx2qif.1
+	dh_installman

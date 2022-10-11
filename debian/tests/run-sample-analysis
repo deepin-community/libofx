@@ -1,0 +1,20 @@
+#!/bin/sh -e
+# http://dep.debian.net/deps/dep8/
+# Autopkgtest: Test if libofx run correctly
+# Author: Dylan Aïssi <bob.dybian@gmail.com>
+# Last-Update: 2018-05-08
+
+pkg=libofx
+if [ "$AUTOPKGTEST_TMP" = "" ] ; then
+  AUTOPKGTEST_TMP=`mktemp -d /tmp/${pkg}-test.XXXXXX`
+fi
+cd $AUTOPKGTEST_TMP
+cp -a /usr/share/doc/${pkg}-dev/ofx_sample_files/*.ofx $AUTOPKGTEST_TMP
+
+for OFXFILE in *.ofx
+do
+	ofx2qif "${OFXFILE}" > "${OFXFILE}".qif
+done
+
+rm -f $AUTOPKGTEST_TMP/*
+

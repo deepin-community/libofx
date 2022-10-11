@@ -1,0 +1,34 @@
+libofx.so.7 #PACKAGE# #MINVER#
+* Build-Depends-Package: libofx-dev
+ (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@Base" 0.9.14
+ (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)@Base" 0.9.14
+ (c++|optional)"std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)@Base" 0.9.14
+ (c++|optional)"std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@Base" 0.9.14
+ libofx_free_context@Base 0.9.14
+ libofx_get_file_format_description@Base 0.9.14
+ libofx_get_file_format_from_str@Base 0.9.14
+ libofx_get_new_context@Base 0.9.14
+ libofx_proc_file@Base 0.9.14
+ libofx_request_accountinfo@Base 0.9.14
+ libofx_request_payment@Base 0.9.14
+ libofx_request_payment_status@Base 0.9.14
+ libofx_request_statement@Base 0.9.14
+ libofx_set_dtd_dir@Base 0.9.14
+ ofx_DEBUG1_msg@Base 0.9.14
+ ofx_DEBUG2_msg@Base 0.9.14
+ ofx_DEBUG3_msg@Base 0.9.14
+ ofx_DEBUG4_msg@Base 0.9.14
+ ofx_DEBUG5_msg@Base 0.9.14
+ ofx_DEBUG_msg@Base 0.9.14
+ ofx_ERROR_msg@Base 0.9.14
+ ofx_INFO_msg@Base 0.9.14
+ ofx_PARSER_msg@Base 0.9.14
+ ofx_STATUS_msg@Base 0.9.14
+ ofx_WARNING_msg@Base 0.9.14
+ ofx_set_account_cb@Base 0.9.14
+ ofx_set_position_cb@Base 1:0.10.1
+ ofx_set_security_cb@Base 0.9.14
+ ofx_set_statement_cb@Base 0.9.14
+ ofx_set_status_cb@Base 0.9.14
+ ofx_set_transaction_cb@Base 0.9.14
+ ofx_show_position@Base 0.9.14
