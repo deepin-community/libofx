@@ -1,3 +1,9 @@
+libofx (1:0.10.3-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Fri, 20 Sep 2024 12:10:46 +0800
+
 libofx (1:0.10.3-1) unstable; urgency=medium
 
   * New upstream version
